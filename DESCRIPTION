@@ -1,0 +1,38 @@
+Package: ssdqa
+Title: SSDQA
+Version: 0.0.0.9000
+Authors@R: 
+    c(person("Kaleigh", "Wieand", email = "wieandk@chop.edu", role = c("aut", "cre")),
+      person("Kim", "Dickinson", email = "dickinsokl@chop.edu", role = c("aut")),
+      person("Hanieh", "Razzaghi", email = "razzaghih@chop.edu", role = c("aut")),
+      person("Charles", "Bailey", email = "baileyc@chop.edu", role = c("aut"), 
+              comment = c(ORCID = "0000-0002-8967-0662")))
+Description: Welcome to the SSDQA ecosystem! This is our "verse" package that will download all currently available modules. Each module is its own package, so they are also available to download in isolation if you would rather not install the full suite.
+License: MPL-2.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports: 
+    cli,
+    clinicalevents.specialties (>= 0.0.0.9000),
+    cohortattrition (>= 0.0.0.9000),
+    conceptsetdistribution (>= 0.0.0.9000),
+    crayon,
+    expectedvariablespresent (>= 0.0.0.9000),
+    patienteventsequencing (>= 0.0.0.9000),
+    patientfacts (>= 0.0.0.9000),
+    patientrecordconsistency (>= 0.0.0.9000),
+    rstudioapi,
+    sensitivityselectioncriteria (>= 0.0.0.9000),
+    sourceconceptvocabularies (>= 0.0.0.9000),
+    utils
+Remotes:  
+    ssdqa/patientfacts,
+    ssdqa/patientrecordconsistency,
+    ssdqa/patienteventsequencing,
+    ssdqa/conceptsetdistribution,
+    ssdqa/expectedvariablespresent,
+    ssdqa/sourceconceptvocabularies,
+    ssdqa/clinicalevents.specialties,
+    ssdqa/sensitivityselectioncriteria,
+    ssdqa/cohortattrition
