@@ -3,8 +3,9 @@
 Welcome to the SSDQA ecosystem! This package will download all currently available modules, of which there are **9** (as of 11/2024).
 
 Install the development version of the package:
-```
-install_github('ssdqa/ssdqa')
+
+``` r
+devtools::install_github('ssdqa/ssdqa')
 ```
 
 
