@@ -1,5 +1,5 @@
-Package: ssdqa
-Title: Study-Specific Data Quality Analysis (SSDQA)
+Package: squba
+Title: Study-Specific Quality, Utility, and Breadth Assessment (SQUBA)
 Version: 0.0.0.9000
 Authors@R: 
     c(person("Hanieh", "Razzaghi", email = "razzaghih@chop.edu", role = c("aut"),
@@ -10,16 +10,16 @@ Authors@R:
              comment = c(ORCID = "0000-0001-9523-056X")),
       person("Charles", "Bailey", email = "baileyc@chop.edu", role = c("aut"),
              comment = c(ORCID = "0000-0002-8967-0662")))
-Description: Welcome to the Study-Specific Data Quality Analysis (SSDQA) ecosystem! 
+Description: Welcome to the Study-Specific Quality, Utility, and Breadth Assessment (SQUBA) ecosystem! 
     This is a "verse" package that will download all currently available modules and the support function package. 
     Each module is encapsulated in its own package, so they are also available to download in isolation if you 
     would rather not install the full suite.
 License: MPL-2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
-URL: https://github.com/ssdqa/ssdqa
-BugReports: https://github.com/ssdqa/ssdqa/issues
+RoxygenNote: 7.3.2
+URL: https://github.com/ssdqa/squba
+BugReports: https://github.com/ssdqa/squba/issues
 Imports: 
     cli,
     clinicalevents.specialties (>= 0.0.0.9000),
@@ -34,7 +34,7 @@ Imports:
     sensitivityselectioncriteria (>= 0.0.0.9000),
     sourceconceptvocabularies (>= 0.0.0.9000),
     utils
-Remotes:  
+Remotes: 
     ssdqa/patientfacts,
     ssdqa/patientrecordconsistency,
     ssdqa/patienteventsequencing,

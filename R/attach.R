@@ -1,8 +1,8 @@
 
 pkgs <- c("patientfacts", "patientrecordconsistency", "patienteventsequencing", "conceptsetdistribution", "expectedvariablespresent", "sourceconceptvocabularies", "clinicalevents.specialties", "sensitivityselectioncriteria", "cohortattrition")
 
-ssdqa_attach <- function() {
-  # Create `to_load` which is a character vector of all ssdqa
+squba_attach <- function() {
+  # Create `to_load` which is a character vector of all squba
   # packages not loaded in the current R session.
   to_load <- check_loaded()
 
@@ -14,13 +14,13 @@ ssdqa_attach <- function() {
 
   # Create a line rule with two text labels:
   # "Attaching packages" on the left-hand side and
-  # ssdqa with the package version on the right-hand side
+  # squba with the package version on the right-hand side
   load_header <- cli::rule(
     left = crayon::bold("Attaching packages"),
-    right = paste0("ssdqa ", package_version("ssdqa"))
+    right = paste0("squba ", package_version("squba"))
   )
 
-  # Return a character string containing the package version for each of ssdqa's constituents
+  # Return a character string containing the package version for each of squba's constituents
   versions <- vapply(to_load, package_version, character(1))
 
   packages <- paste0(
@@ -55,21 +55,21 @@ ssdqa_attach <- function() {
 }
 
 # Detach all loaded packages for seeing the pretty startup message (:
-ssdqa_detach <- function() {
-  pak <- paste0("package:", c(pkgs, "ssdqa"))
+squba_detach <- function() {
+  pak <- paste0("package:", c(pkgs, "squba"))
   lapply(pak[pak %in% search()], detach, character.only = TRUE)
   invisible()
 }
 
-#' List all packages imported by ssdqa
+#' List all packages imported by squba
 #'
 #' @export
 #'
 #' @examples
-#' ssdqa_packages()
-ssdqa_packages <- function() {
-  # get all imports from ssdqa's package description file
-  raw <- utils::packageDescription("ssdqa")$Imports
+#' squba_packages()
+squba_packages <- function() {
+  # get all imports from squba's package description file
+  raw <- utils::packageDescription("squba")$Imports
   # return a character vector of all the imports
   imports <- strsplit(raw, ",")[[1]]
   # "^\\s+" matches white space at the beginning of a character string

@@ -6,7 +6,7 @@
     return()
     # Otherwise, attach any needed packages
   } else {
-    ssdqa_attach()
+    squba_attach()
   }
 
 }

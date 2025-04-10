@@ -40,7 +40,7 @@ msg <- function(...) {
 }
 
 
-# Check which of the main ssdqa packages
+# Check which of the main squba packages
 # are currently loaded
 # The search() function  returns a character vector containing packages
 # attached to the current R session.
