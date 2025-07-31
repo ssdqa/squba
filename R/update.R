@@ -34,6 +34,7 @@ squba_update <- function(){
                 "quantvariabledistribution")
 
   uptodate_list <- list()
+  install_list <- list()
 
   for(i in pkg_list){
 
