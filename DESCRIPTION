@@ -26,13 +26,19 @@ Imports:
     cohortattrition (>= 0.0.0.9000),
     conceptsetdistribution (>= 0.0.0.9000),
     crayon,
+    devtools (>= 2.4.5),
+    dplyr (>= 1.1.4),
     expectedvariablespresent (>= 0.0.0.9000),
     patienteventsequencing (>= 0.0.0.9000),
     patientfacts (>= 0.0.0.9000),
     patientrecordconsistency (>= 0.0.0.9000),
+    purrr (>= 1.0.4),
     rstudioapi,
     sensitivityselectioncriteria (>= 0.0.0.9000),
     sourceconceptvocabularies (>= 0.0.0.9000),
+    squba.gen (>= 0.0.0.9000),
+    stringr (>= 1.5.1),
+    quantvariabledistribution (>= 0.0.0.9000),
     utils
 Remotes: 
     ssdqa/patientfacts,
@@ -43,4 +49,6 @@ Remotes:
     ssdqa/sourceconceptvocabularies,
     ssdqa/clinicalevents.specialties,
     ssdqa/sensitivityselectioncriteria,
-    ssdqa/cohortattrition
+    ssdqa/cohortattrition,
+    ssdqa/quantvariabledistribution,
+    ssdqa/squba.gen
