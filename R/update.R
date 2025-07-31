@@ -44,7 +44,7 @@ squba_update <- function(){
     uptodate_list[[i]] <- dplyr::tibble('package' = i,
                                         'current_version' = uptodate_v)
 
-    installed_v <- utils::packageDescription(pkg = i)
+    installed_v <- utils::packageDescription(pkg = i)$GithubSHA1
 
     install_list[[i]] <- dplyr::tibble('package' = i,
                                        'installed_version' = installed_v)
