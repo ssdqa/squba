@@ -6,16 +6,12 @@
 #'          installed
 #'
 #' @importFrom dplyr filter
-#' @importFrom dplyr select
-#' @importFrom dplyr mutate
 #' @importFrom dplyr tibble
-#' @importFrom dplyr as_tibble
 #' @importFrom dplyr union
 #' @importFrom dplyr left_join
-#' @importFrom dplyr rename
 #' @importFrom purrr reduce
-#' @importFrom stringr str_extract_all
-#' @importFrom devtools package_info
+#' @importFrom remotes github_remote
+#' @importFrom remotes remote_sha
 #'
 #' @export
 #' @examples
@@ -41,22 +37,24 @@ squba_update <- function(){
 
   for(i in pkg_list){
 
-    uptodate_v <- utils::packageDescription(i)$GithubSHA1
+    pkg_rmt <- remotes::github_remote(repo = paste0('ssdqa/', i))
+
+    uptodate_v <- remotes::remote_sha(remote = pkg_rmt)
 
     uptodate_list[[i]] <- dplyr::tibble('package' = i,
                                         'current_version' = uptodate_v)
 
+    installed_v <- utils::packageDescription(pkg = i)
+
+    install_list[[i]] <- dplyr::tibble('package' = i,
+                                       'installed_version' = installed_v)
   }
 
   current_vs <- purrr::reduce(.x = uptodate_list,
                               .f = dplyr::union)
 
-  installed_vs <- dplyr::as_tibble(devtools::package_info()) |>
-    dplyr::filter(package %in% pkg_list) |>
-    dplyr::select(package, source) |>
-    dplyr::mutate(source = stringr::str_extract_all(source, '\\@.*'),
-                  source = gsub('@|)', "", source)) |>
-    dplyr::rename('installed_version' = 'source')
+  installed_vs <- purrr::reduce(.x = install_list,
+                                .f = dplyr::union)
 
   ck <- current_vs |>
     dplyr::left_join(installed_vs)|>
