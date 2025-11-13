@@ -4,7 +4,7 @@ template:
   light-switch: true
 navbar:
   left:
-  - icon: fa-home
+  - text: 'Home'
     href: index.html
   - text: 'Modules'
     menu:
@@ -37,7 +37,6 @@ navbar:
       href: https://github.com/ssdqa/clinicalevents.specialties
   - text: 'PEDSpace'
     href: https://hdl.handle.net/20.500.14642/2
-  right: [search, github, lightswitch]
 reference:
 - title: Helper Functions
   desc: >
