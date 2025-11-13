@@ -88,3 +88,9 @@ Functions to view the status of your squba packages
 - [`squba_update()`](https://ssdqa.github.io/squba/reference/squba_update.md)
   : Update squba packages to align with most recent GitHub commits
 
+# Articles
+
+### All vignettes
+
+- [Connecting to Your
+  Data](https://ssdqa.github.io/squba/articles/database_connection.md):
