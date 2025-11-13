@@ -1,0 +1,12 @@
+url: https://ssdqa.github.io/squba/
+template:
+  bootstrap: 5
+  light-switch: true
+reference:
+- title: Helper Functions
+  desc: >
+   Functions to view the status of your squba packages
+  contents:
+  - squba_packages
+  - squba_update
+

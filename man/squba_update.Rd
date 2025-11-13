@@ -2,7 +2,7 @@
 % Please edit documentation in R/update.R
 \name{squba_update}
 \alias{squba_update}
-\title{Update SQUBA packages to align with most recent GitHub commits}
+\title{Update squba packages to align with most recent GitHub commits}
 \usage{
 squba_update()
 }
@@ -12,10 +12,12 @@ packages need to be updated based on what is currently
 installed
 }
 \description{
-Update SQUBA packages to align with most recent GitHub commits
+Update squba packages to align with most recent GitHub commits
 }
 \examples{
 \dontrun{
+## Requires that a GitHub PAT is established
+
 squba_update()
 }
 }
