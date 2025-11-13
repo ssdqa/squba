@@ -29,7 +29,7 @@ navbar:
       href: https://github.com/ssdqa/categoricalvariabledistribution
     - text: 'Concept Set Testing'
     - text: '  Concept Set Distribution'
-      href: https://github.com/ssdqa/conceptsetdistribution
+      href: https://ssdqa.github.io/conceptsetdistribution/
     - text: '  Source & Concept Vocabularies'
       href: https://github.com/ssdqa/sourceconceptvocabularies
     - text: 'Dataset Fitness'

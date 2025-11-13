@@ -51,3 +51,7 @@ Remotes:
     ssdqa/cohortattrition,
     ssdqa/quantvariabledistribution,
     ssdqa/squba.gen
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
