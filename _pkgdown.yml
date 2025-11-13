@@ -2,6 +2,43 @@ url: https://ssdqa.github.io/squba/
 template:
   bootstrap: 5
   light-switch: true
+navbar:
+  structure:
+    left:
+    - icon: fa-home
+      href: index.html
+    - text: 'Modules'
+      menu:
+      - text: 'Cohort Identification'
+      - text: '  Cohort Attrition'
+      - href: https://github.com/ssdqa/cohortattrition
+      - text: '  Sensitivity to Selection Criteria'
+      - href: https://github.com/ssdqa/sensitivityselectioncriteria
+      - text: 'Cohort Fitness'
+      - text: '  Patient Facts'
+      - href: https://github.com/ssdqa/patientfacts
+      - text: '  Patient Event Sequencing'
+      - href: https://github.com/ssdqa/patienteventsequencing
+      - text: '  Patient Record Consistency'
+      - href: https://github.com/ssdqa/patientrecordconsistency
+      - text: 'Variable Testing'
+      - text: '  Expected Variables Present'
+      - href: https://github.com/ssdqa/expectedvariablespresent
+      - text: '  Quantitative Variable Distribution'
+      - href: https://github.com/ssdqa/quantvariabledistribution
+      - text: '  Categorical Variable Distribution'
+      - href: https://github.com/ssdqa/categoricalvariabledistribution
+      - text: 'Concept Set Testing'
+      - text: '  Concept Set Distribution'
+      - href: https://github.com/ssdqa/conceptsetdistribution
+      - text: '  Source & Concept Vocabularies'
+      - href: https://github.com/ssdqa/sourceconceptvocabularies
+      - text: 'Dataset Fitness'
+      - text: '  Clinical Events & Specialties'
+      - href: https://github.com/ssdqa/clinicalevents.specialties
+    - text: 'PEDSpace'
+    - href: https://hdl.handle.net/20.500.14642/2
+  right: [search, github, lightswitch]
 reference:
 - title: Helper Functions
   desc: >

@@ -10,7 +10,7 @@ Dive into data quality with `squba`!
 
 This suite of R packages will allow you to investigate multiple facets of data quality and customize analyses based on your study-specific needs. Each module will allow you to conduct up to 8 different analyses in either the OMOP or PCORnet CDM, all aimed at taking a different view of the data while still addressing the same data quality probe. To learn more about the theory behind `squba`, see our manuscript (coming soon)!
 
-This package will download all currently available modules, of which there are **11** (as of 11/2025). The list below contains list of each module and a brief description of the data quality probe it aims to address. You can also see more granular descriptions of each module and check type on [PEDSpace](https://hdl.handle.net/20.500.14642/2), our metadata repository.
+This package will download all currently available modules, of which there are **11** (as of 11/2025). The "Modules" dropdown contains the list of each module and links out to the module-specific documentation. You can also see more granular descriptions of each module and check type on [PEDSpace](https://hdl.handle.net/20.500.14642/2), our metadata repository.
 
 ## Installation
 
