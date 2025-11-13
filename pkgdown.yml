@@ -3,7 +3,7 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   database_connection: database_connection.html
-last_built: 2025-11-13T20:44Z
+last_built: 2025-11-13T20:52Z
 urls:
   reference: https://ssdqa.github.io/squba/reference
   article: https://ssdqa.github.io/squba/articles
