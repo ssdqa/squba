@@ -35,6 +35,11 @@ navbar:
     - text: 'Dataset Fitness'
     - text: '  Clinical Events & Specialties'
       href: https://github.com/ssdqa/clinicalevents.specialties
+  - text: 'Articles'
+    href: articles/index.html
+    menu:
+    - text: 'Database Connection'
+      href: articles/database_connection.html
   - text: 'PEDSpace'
     href: https://hdl.handle.net/20.500.14642/2
 reference:
