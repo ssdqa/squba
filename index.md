@@ -43,7 +43,7 @@ appropriate repository for installation instructions.
     the information is confirmatory and complete
 - Variable Testing
   - [Expected Variables
-    Present](https://github.com/ssdqa/expectedvariablespresent):
+    Present](https://ssdqa.github.io/expectedvariablespresent):
     Evaluates the presence and distribution of study variables at the
     patient & row levels
   - [Quantitative Variable
@@ -56,7 +56,7 @@ appropriate repository for installation instructions.
     what is present in the data (ex: drug dosage units)
 - Concept-Set Testing
   - [Concept Set
-    Distribution](https://github.com/ssdqa/conceptsetdistribution):
+    Distribution](https://ssdqa.github.io/conceptsetdistribution):
     Computes the distribution of concepts that make up a given study
     variable
   - [Source and Concept
@@ -65,14 +65,14 @@ appropriate repository for installation instructions.
     concept-to-source relationships
 - Dataset Fitness
   - [Clinical Events &
-    Specialties](https://github.com/ssdqa/clinicalevents.specialties):
+    Specialties](https://ssdqa.github.io/clinicalevents.specialties):
     Assesses the concordance between a clinical event and the associated
     specialtist providers or care sites
 - Cohort Identification
-  - [Cohort Attrition](https://github.com/ssdqa/cohortattrition):
-    Examine each step of a study’s attrition criteria to identify
-    potential irregularities in cohort construction
+  - [Cohort Attrition](https://ssdqa.github.io/cohortattrition): Examine
+    each step of a study’s attrition criteria to identify potential
+    irregularities in cohort construction
   - [Sensitivity to Selection
-    Criteria](https://github.com/ssdqa/sensitivityselectioncriteria):
+    Criteria](https://ssdqa.github.io/sensitivityselectioncriteria):
     Compare demographics, utilization patterns, and clinical fact makeup
     of a base cohort definition to alternate cohort definitions
