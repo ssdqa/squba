@@ -10,9 +10,9 @@ navbar:
     menu:
     - text: 'Cohort Identification'
     - text: '  Cohort Attrition'
-      href: https://github.com/ssdqa/cohortattrition
+      href: https://ssdqa.github.io/cohortattrition
     - text: '  Sensitivity to Selection Criteria'
-      href: https://github.com/ssdqa/sensitivityselectioncriteria
+      href: https://ssdqa.github.io/sensitivityselectioncriteria
     - text: 'Cohort Fitness'
     - text: '  Patient Facts'
       href: https://github.com/ssdqa/patientfacts
@@ -22,7 +22,7 @@ navbar:
       href: https://github.com/ssdqa/patientrecordconsistency
     - text: 'Variable Testing'
     - text: '  Expected Variables Present'
-      href: https://github.com/ssdqa/expectedvariablespresent
+      href: https://ssdqa.github.io/expectedvariablespresent
     - text: '  Quantitative Variable Distribution'
       href: https://github.com/ssdqa/quantvariabledistribution
     - text: '  Categorical Variable Distribution'
@@ -34,7 +34,7 @@ navbar:
       href: https://github.com/ssdqa/sourceconceptvocabularies
     - text: 'Dataset Fitness'
     - text: '  Clinical Events & Specialties'
-      href: https://github.com/ssdqa/clinicalevents.specialties
+      href: https://ssdqa.github.io/clinicalevents.specialties
   - text: 'Articles'
     href: articles/index.html
     menu:
