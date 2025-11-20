@@ -24,14 +24,14 @@ navbar:
     - text: '  Expected Variables Present'
       href: https://ssdqa.github.io/expectedvariablespresent
     - text: '  Quantitative Variable Distribution'
-      href: https://github.com/ssdqa/quantvariabledistribution
+      href: https://ssdqa.github.io/ssdqa/quantvariabledistribution
     - text: '  Categorical Variable Distribution'
       href: https://github.com/ssdqa/categoricalvariabledistribution
     - text: 'Concept Set Testing'
     - text: '  Concept Set Distribution'
       href: https://ssdqa.github.io/conceptsetdistribution/
     - text: '  Source & Concept Vocabularies'
-      href: https://github.com/ssdqa/sourceconceptvocabularies
+      href: https://ssdqa.github.io/sourceconceptvocabularies
     - text: 'Dataset Fitness'
     - text: '  Clinical Events & Specialties'
       href: https://ssdqa.github.io/clinicalevents.specialties
