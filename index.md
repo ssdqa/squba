@@ -47,7 +47,7 @@ appropriate repository for installation instructions.
     Evaluates the presence and distribution of study variables at the
     patient & row levels
   - [Quantitative Variable
-    Distribution](https://github.com/ssdqa/quantvariabledistribution):
+    Distribution](https://ssdqa.github.io/quantvariabledistribution):
     Summarizes the distribution of quantitative study variables (ex: lab
     test results)
   - [Categorical Variable
@@ -60,7 +60,7 @@ appropriate repository for installation instructions.
     Computes the distribution of concepts that make up a given study
     variable
   - [Source and Concept
-    Vocabularies](https://github.com/ssdqa/sourceconceptvocabularies):
+    Vocabularies](https://ssdqa.github.io/sourceconceptvocabularies):
     Identifies and summarizes concept mappings for source-to-concept or
     concept-to-source relationships
 - Dataset Fitness
