@@ -24,9 +24,9 @@ If you would like to install individual modules, navigate to the appropriate rep
 
 ## Available Modules
 - Cohort Fitness
-  - [Patient Facts](https://github.com/ssdqa/patientfacts): Assesses the availability of patient clinical data per year of follow-up as a factor of visit type
-  - [Patient Event Sequencing](https://github.com/ssdqa/patienteventsequencing): Evaluates the plausibility of the temporal relationship between two clinical events
-  - [Patient Record Consistency](https://github.com/ssdqa/patientrecordconsistency): Checks for consistency within a patient's clinical record to ensure the information is confirmatory and complete
+  - [Patient Facts](https://ssdqa.github.io/patientfacts): Assesses the availability of patient clinical data per year of follow-up as a factor of visit type
+  - [Patient Event Sequencing](https://ssdqa.github.io/patienteventsequencing): Evaluates the plausibility of the temporal relationship between two clinical events
+  - [Patient Record Consistency](https://ssdqa.github.io/patientrecordconsistency): Checks for consistency within a patient's clinical record to ensure the information is confirmatory and complete
 - Variable Testing
   - [Expected Variables Present](https://ssdqa.github.io/expectedvariablespresent): Evaluates the presence and distribution of study variables at the patient & row levels
   - [Quantitative Variable Distribution](https://ssdqa.github.io/quantvariabledistribution): Summarizes the distribution of quantitative study variables (ex: lab test results)

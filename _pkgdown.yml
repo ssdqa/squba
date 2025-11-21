@@ -15,11 +15,11 @@ navbar:
       href: https://ssdqa.github.io/sensitivityselectioncriteria
     - text: 'Cohort Fitness'
     - text: '  Patient Facts'
-      href: https://github.com/ssdqa/patientfacts
+      href: https://ssdqa.github.io/patientfacts
     - text: '  Patient Event Sequencing'
-      href: https://github.com/ssdqa/patienteventsequencing
+      href: https://ssdqa.github.io/patienteventsequencing
     - text: '  Patient Record Consistency'
-      href: https://github.com/ssdqa/patientrecordconsistency
+      href: https://ssdqa.github.io/patientrecordconsistency
     - text: 'Variable Testing'
     - text: '  Expected Variables Present'
       href: https://ssdqa.github.io/expectedvariablespresent
