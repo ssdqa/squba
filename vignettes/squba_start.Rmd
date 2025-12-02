@@ -18,9 +18,9 @@ knitr::opts_chunk$set(
 
 Each module, among things specific to the execution of that particular data quality probe, has certain inputs and parameters that are standard across the entire suite. This guide will walk through what each of these inputs are and what role they play in your data quality analysis.
 
-## Analysis-Specific Inputs
+# Analysis-Specific Inputs
 
-### The Cohort
+## The Cohort
 
 Each module will require you to provide a table containing the foundation of your study analysis: your cohort! This table must have, at a minimum, the following four columns:
 
@@ -52,7 +52,7 @@ Providing all this information will give the module three essential pieces of in
 -   How many sites are present among these patients
 -   What is the cohort period of interest for which data should be extracted
 
-### The Definition Table
+## The Definition Table
 
 Each module will ask that you provide a table that defines the targets for your data quality analysis. While the specific contents of this table differ between modules, generally it will ask you to provide information about:
 
@@ -63,7 +63,7 @@ Each module will ask that you provide a table that defines the targets for your 
 
 For more details about what is required, please see the documentation for the specific module you would like to use.
 
-### Concept Sets
+## Concept Sets
 
 `squba` modules expect concept sets, which contain sets of codes to define a single clinical concept or variable, to be in a specific format to ensure these files can be referenced in a standard way across the suite. They must contain the following two columns:
 
@@ -74,21 +74,19 @@ For PCORnet implementations, a `vocabulary_id` column may also be required. For 
 
 Other information, such as a `concept_name` with the full description of the concept, can be included in this file but is not required.
 
-::: callout-tip
-Any concept set used as input to `squba` should be stored as a CSV file in a pre-defined file subdirectory in your project (see [Connecting to your Data](https://ssdqa.github.io/squba/articles/database_connection.html) for more details).
-:::
+**Note:** Any concept set used as input to `squba` should be stored as a CSV file in a pre-defined file subdirectory in your project (see [Connecting to your Data](https://ssdqa.github.io/squba/articles/database_connection.html) for more details).
 
-## Module Parameters
+# Module Parameters
 
 Most modules, with exceptions for modules like Cohort Attrition that cannot be assessed longitudinally, will contain `multi_or_single_site`, `anomaly_or_exploratory`, and `time` as function parameters. The sections below will explain what each of these parameters means and why you may want to select one option versus the other.
 
-### Single versus Multi-Site Analyses
+## Single versus Multi-Site Analyses
 
 This parameter essentially controls whether you want to utilize the `site` column in your cohort table as a grouping variable. But beyond that, it also will control whether you are comparing the behavior of the targets of your analysis (variables, codes, etc.) versus comparing the behavior of the different sites in your cohort. For example, in the [Expected Variables Present](https://ssdqa.github.io/expectedvariablespresent/) module, toggling this parameter will control whether you see a bar graph highlighting that your cohort has more hypertension diagnoses than diabetes diagnoses or whether you see a heat map demonstrating that one institution has more hypertension diagnoses than another.
 
 If you only have one site in your cohort file, only single site analysis are possible so you can "set and forget" this parameter. If you have multiple sites, however, both the single and multi-site analyses are available to you. A single site analysis when multiple sites are present in the cohort file will essentially ignore the `site` column and treat the whole cohort as one big group. If you really only want to target one site in isolation, you should be sure to filter your cohort before executing the single site analysis.
 
-### Exploratory versus Anomaly Detection Analyses
+## Exploratory versus Anomaly Detection Analyses
 
 This parameter controls the type of computation that will be executed for the analysis. Exploratory checks extract high level summary information, like counts and proportions, and make them available to you so you can get a general picture of what the data looks like. Anomaly detection checks will take this information and execute a more formal statistical computation to identify outliers within the result set. In the [Concept Set Distribution](https://ssdqa.github.io/conceptsetdistribution/) module, an exploratory analysis may demonstrate that a few codes stand out as the most frequently used when defining a variable, but an anomaly detection analysis may reveal that only one of them is anomalous compared to the rest of the codes in the concept set.
 
@@ -113,7 +111,7 @@ The Single Site, Anomaly Detection, Cross-Sectional checks tend to apply differe
 | Multi-Site, Anomaly Detection, Longitudinal    | This check will use a Euclidean distance method to evaluate the average distance between the overall, all-site time series and the site-specific time series for the analysis target, with Loess smoothing applied to each time series.                       | N/A                                                                                                                 |
 +------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
-### Cross-Sectional versus Longitudinal Analyses
+## Cross-Sectional versus Longitudinal Analyses
 
 This parameter controls whether you look at a static snapshot of the data versus a longitudinal time series. It can be beneficial to look at certain things across time to identify any temporal trends in how the data behaves. These could be expected, like seeing impacts of the switch from ICD9 to ICD10, or unexpected, like seeing a sudden spike in the prescription of a drug from one year to the next.
 
