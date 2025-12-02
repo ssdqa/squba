@@ -6,6 +6,8 @@ navbar:
   left:
   - text: 'Home'
     href: index.html
+  - text: 'Getting Started'
+    href: articles/squba_start.html
   - text: 'Modules'
     menu:
     - text: 'Cohort Identification'
