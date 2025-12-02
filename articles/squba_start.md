@@ -21,7 +21,7 @@ Each module will require you to provide a table containing the
 foundation of your study analysis: your cohort! This table must have, at
 a minimum, the following four columns:
 
-#### Site
+##### Site
 
 The `site` column is originally intended for network-level analyses
 where data from multiple institutions is available. But really, it’s
@@ -31,14 +31,14 @@ can compare how patients at these institutions behave, or you can input
 a different patient characteristic, like sex or a more study-specific
 flag, to compare those groups to one another.
 
-#### Patient Identifier
+##### Patient Identifier
 
 This column will contain all of the unique patient identifiers used to
 classify members of your cohort. If you are using the OMOP data model,
 this will be the `person_id` column. If you are using PCORnet, this will
 be the `patid` column.
 
-#### Start Date
+##### Start Date
 
 The `start_date` column should indicate the earliest date for which data
 can be extracted for that patient. This will most likely be the cohort
@@ -52,7 +52,7 @@ of the cohort when looking at the year of 2009 or the month of December
 treated as a full member of the cohort starting in the year of 2010 or
 the month of January 2010.
 
-#### End Date
+##### End Date
 
 The `end_date` column should indicate the latest date for which data can
 be extracted for that patient. This may be the end of the follow-up
@@ -122,9 +122,9 @@ included as a parameter in the join between the concept set and the CDM.
 Other information, such as a `concept_name` with the full description of
 the concept, can be included in this file but is not required.
 
-Any concept set used as input to `squba` should be stored as a CSV file
-in a pre-defined file subdirectory in your project (see [Connecting to
-your
+**Note:** Any concept set used as input to `squba` should be stored as a
+CSV file in a pre-defined file subdirectory in your project (see
+[Connecting to your
 Data](https://ssdqa.github.io/squba/articles/database_connection.html)
 for more details).
 

@@ -116,9 +116,9 @@ analysis.</p>
 <p>Each module will require you to provide a table containing the
 foundation of your study analysis: your cohort! This table must have, at
 a minimum, the following four columns:</p>
-<div class="section level4">
-<h4 id="site">Site<a class="anchor" aria-label="anchor" href="#site"></a>
-</h4>
+<div class="section level5">
+<h5 id="site">Site<a class="anchor" aria-label="anchor" href="#site"></a>
+</h5>
 <p>The <code>site</code> column is originally intended for network-level
 analyses where data from multiple institutions is available. But really,
 it’s just the primary grouping variable that will be used in the
@@ -127,17 +127,17 @@ sources so you can compare how patients at these institutions behave, or
 you can input a different patient characteristic, like sex or a more
 study-specific flag, to compare those groups to one another.</p>
 </div>
-<div class="section level4">
-<h4 id="patient-identifier">Patient Identifier<a class="anchor" aria-label="anchor" href="#patient-identifier"></a>
-</h4>
+<div class="section level5">
+<h5 id="patient-identifier">Patient Identifier<a class="anchor" aria-label="anchor" href="#patient-identifier"></a>
+</h5>
 <p>This column will contain all of the unique patient identifiers used
 to classify members of your cohort. If you are using the OMOP data
 model, this will be the <code>person_id</code> column. If you are using
 PCORnet, this will be the <code>patid</code> column.</p>
 </div>
-<div class="section level4">
-<h4 id="start-date">Start Date<a class="anchor" aria-label="anchor" href="#start-date"></a>
-</h4>
+<div class="section level5">
+<h5 id="start-date">Start Date<a class="anchor" aria-label="anchor" href="#start-date"></a>
+</h5>
 <p>The <code>start_date</code> column should indicate the earliest date
 for which data can be extracted for that patient. This will most likely
 be the cohort entry date.</p>
@@ -149,9 +149,9 @@ of the cohort when looking at the year of 2009 or the month of December
 treated as a full member of the cohort starting in the year of 2010 or
 the month of January 2010.</p>
 </div>
-<div class="section level4">
-<h4 id="end-date">End Date<a class="anchor" aria-label="anchor" href="#end-date"></a>
-</h4>
+<div class="section level5">
+<h5 id="end-date">End Date<a class="anchor" aria-label="anchor" href="#end-date"></a>
+</h5>
 <p>The <code>end_date</code> column should indicate the latest date for
 which data can be extracted for that patient. This may be the end of the
 follow-up period or the date of another event that indicates an exit
@@ -224,11 +224,10 @@ the CDM.</p>
 <p>Other information, such as a <code>concept_name</code> with the full
 description of the concept, can be included in this file but is not
 required.</p>
-<div class="callout-tip">
-<p>Any concept set used as input to <code>squba</code> should be stored
-as a CSV file in a pre-defined file subdirectory in your project (see <a href="https://ssdqa.github.io/squba/articles/database_connection.html">Connecting
+<p><strong>Note:</strong> Any concept set used as input to
+<code>squba</code> should be stored as a CSV file in a pre-defined file
+subdirectory in your project (see <a href="https://ssdqa.github.io/squba/articles/database_connection.html">Connecting
 to your Data</a> for more details).</p>
-</div>
 </div>
 </div>
 <div class="section level2">
