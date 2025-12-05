@@ -98,7 +98,12 @@ initialize_dq_session(session_name = 'vignette_demo',
                       cdm_schema = 'my_cdm_schema',
                       results_schema = 'my_results_schema', ***
                       results_tag = '_project_id', ***
-                      vocabulary_schema = 'vocabulary' ***
+                      vocabulary_schema = 'vocabulary', ***
+                      cache_enabled = FALSE, ***
+                      retain_intermediates = FALSE, ***
+                      db_trace = TRUE, ***
+                      default_file_output = FALSE, ***
+                      results_subdirectory = NULL ***
                       )
 
 ```
@@ -113,3 +118,20 @@ This is an optional string that would be appended on to any tables output back t
 If you have the OMOP vocabulary tables available on your database and would like to access them as part of the analysis, this is where you would define the schema in which those tables are stored. 
 
 This parameter will primarily be used for OMOP database backends, but can be used for PCORnet backends if the same or similar tables are available.
+
+#### **cache_enabled**
+This parameter will allow you to cache concept sets that are loaded via `argos::load_codeset`, which is the default method used by `squba`. This could be beneficial if you are repeatedly using the same codeset across multiple analyses,
+
+#### **retain_intermediates**
+This parameter controls whether intermediate/temporary tables should be retained on the database. It should be set to `TRUE` if your system does not permit temporary tables.
+
+If using this feature, make sure to set `results_schema` to give the program a destination for the retained tables.
+
+#### **db_trace**
+This parameter, if set to `TRUE`, will print the SQL query log in the R console for any relevant computations. This is essentially a "verbose" option, controlling how much information you want to see about certain queries being executed.
+
+#### **results_subdirectory**
+If you choose to use `argos::output_tbl` to output results, this is the destination that will be used if you choose to output your result table as a file.
+
+#### **default_file_output**
+If you choose to use `argos::output_tbl` to output results to your database, this parameter will globally control whether results are also output in CSV file format to the user-specified results directory. This feature can also be invoked at the function call level if that is preferred.
