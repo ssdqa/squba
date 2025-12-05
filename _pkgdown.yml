@@ -10,6 +10,9 @@ navbar:
     href: articles/squba_start.html
   - text: 'Modules'
     menu:
+    - text: 'Support Functions'
+    - text: 'squba.gen'
+      href: https://ssdqa.github.io/squba.gen
     - text: 'Cohort Identification'
     - text: '  Cohort Attrition'
       href: https://ssdqa.github.io/cohortattrition
