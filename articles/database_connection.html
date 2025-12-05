@@ -34,7 +34,9 @@
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-modules" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Modules</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-modules">
-<li><h6 class="dropdown-header" data-toc-skip>Cohort Identification</h6></li>
+<li><h6 class="dropdown-header" data-toc-skip>Support Functions</h6></li>
+    <li><a class="dropdown-item" href="https://ssdqa.github.io/squba.gen">squba.gen</a></li>
+    <li><h6 class="dropdown-header" data-toc-skip>Cohort Identification</h6></li>
     <li><a class="external-link dropdown-item" href="https://ssdqa.github.io/cohortattrition">  Cohort Attrition</a></li>
     <li><a class="external-link dropdown-item" href="https://ssdqa.github.io/sensitivityselectioncriteria">  Sensitivity to Selection Criteria</a></li>
     <li><h6 class="dropdown-header" data-toc-skip>Cohort Fitness</h6></li>
@@ -119,7 +121,7 @@ something like this:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ssdqa/conceptsetdistribution" class="external-link">conceptsetdistribution</a></span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/squba.gen/man/initialize_dq_session.html" class="external-link">initialize_dq_session</a></span><span class="op">(</span>session_name <span class="op">=</span> <span class="st">'vignette_demo'</span>,</span>
+<span><span class="fu"><a href="https://ssdqa.github.io/squba.gen/reference/initialize_dq_session.html">initialize_dq_session</a></span><span class="op">(</span>session_name <span class="op">=</span> <span class="st">'vignette_demo'</span>,</span>
 <span>                      db_conn <span class="op">=</span> <span class="va">dbi_connection</span> <span class="op">/</span> <span class="st">'path/to/json/config'</span>, <span class="co">#choose one</span></span>
 <span>                      is_json <span class="op">=</span> <span class="cn">FALSE</span> <span class="op">/</span> <span class="cn">TRUE</span>, <span class="co">#choose one</span></span>
 <span>                      working_directory <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/getwd.html" class="external-link">getwd</a></span><span class="op">(</span><span class="op">)</span>,</span>
