@@ -17,14 +17,14 @@
 Source:
 [`DESCRIPTION`](https://github.com/ssdqa/squba/blob/main/DESCRIPTION)
 
-Razzaghi H, Wieand K, Dickinson K, Bailey C (2025). *squba:
+Razzaghi H, Wieand K, Dickinson K, Bailey C (2026). *squba:
 Study-Specific Quality, Utility, and Breadth Assessment (squba)*. R
 package version 0.0.0.9000, <https://github.com/ssdqa/squba>.
 
     @Manual{,
       title = {squba: Study-Specific Quality, Utility, and Breadth Assessment (squba)},
       author = {Hanieh Razzaghi and Kaleigh Wieand and Kimberley Dickinson and Charles Bailey},
-      year = {2025},
+      year = {2026},
       note = {R package version 0.0.0.9000},
       url = {https://github.com/ssdqa/squba},
     }
