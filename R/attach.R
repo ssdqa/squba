@@ -1,5 +1,5 @@
 
-pkgs <- c("patientfacts", "patientrecordconsistency", "patienteventsequencing", "conceptsetdistribution", "expectedvariablespresent", "sourceconceptvocabularies", "clinicalevents.specialties", "sensitivityselectioncriteria", "cohortattrition", "quantvariabledistribution", "squba.gen")
+pkgs <- c("patientfacts", "patientrecordconsistency", "patienteventsequencing", "conceptsetdistribution", "expectedvariablespresent", "sourceconceptvocabularies", "clinicalevents.specialties", "sensitivityselectioncriteria", "cohortattrition", "quantvariabledistribution", "categoricalvariabledistribution", "squba.gen")
 
 squba_attach <- function() {
   # Create `to_load` which is a character vector of all squba

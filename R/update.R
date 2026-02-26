@@ -33,7 +33,8 @@ squba_update <- function(){
                 "sensitivityselectioncriteria",
                 "cohortattrition",
                 "squba.gen",
-                "quantvariabledistribution")
+                "quantvariabledistribution",
+                "categoricalvariabledistribution")
 
   uptodate_list <- list()
   install_list <- list()
