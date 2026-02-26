@@ -38,7 +38,7 @@ Imports:
     sourceconceptvocabularies (>= 0.0.0.9000),
     squba.gen (>= 0.0.0.9000),
     quantvariabledistribution (>= 0.0.0.9000),
-    categoricalvariabledistribution (>=0.0.0.9000),
+    categoricalvariabledistribution (>= 0.0.0.9000),
     utils
 Remotes: 
     ssdqa/patientfacts,
