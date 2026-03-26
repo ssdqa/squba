@@ -17,7 +17,7 @@ Description: Welcome to the Study-Specific Quality, Utility, and Breadth Assessm
 License: MPL-2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 URL: https://github.com/ssdqa/squba, https://ssdqa.github.io/squba/
 BugReports: https://github.com/ssdqa/squba/issues
 Imports: 
@@ -39,6 +39,7 @@ Imports:
     squba.gen (>= 0.0.0.9000),
     quantvariabledistribution (>= 0.0.0.9000),
     categoricalvariabledistribution (>= 0.0.0.9000),
+    unmappedconcepts (>= 0.0.0.9000),
     utils
 Remotes: 
     ssdqa/patientfacts,
@@ -52,6 +53,7 @@ Remotes:
     ssdqa/cohortattrition,
     ssdqa/quantvariabledistribution,
     ssdqa/categoricalvariabledistribution,
+    ssdqa/unmappedconcepts,
     ssdqa/squba.gen
 Suggests: 
     knitr,

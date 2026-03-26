@@ -36,6 +36,8 @@ If you would like to install individual modules, navigate to the appropriate rep
   - [Source and Concept Vocabularies](https://ssdqa.github.io/sourceconceptvocabularies): Identifies and summarizes concept mappings for source-to-concept or concept-to-source relationships
 - Dataset Fitness
   - [Clinical Events & Specialties](https://ssdqa.github.io/clinicalevents.specialties): Assesses the concordance between a clinical event and the associated specialtist providers or care sites
+- Data Conformance
+  - [Unmapped Concepts](https://ssdqa.github.io/unmappedconcepts): Evaluates both the proportion of unmapped values in a dataset and the distribution of unmapped values amongst cohort members
 - Cohort Identification
   - [Cohort Attrition](https://ssdqa.github.io/cohortattrition): Examine each step of a study's attrition criteria to identify potential irregularities in cohort construction
   - [Sensitivity to Selection Criteria](https://ssdqa.github.io/sensitivityselectioncriteria): Compare demographics, utilization patterns, and clinical fact makeup of a base cohort definition to alternate cohort definitions 

@@ -37,6 +37,9 @@ navbar:
     - text: 'Dataset Fitness'
     - text: '  Clinical Events & Specialties'
       href: https://ssdqa.github.io/clinicalevents.specialties
+    - text: 'Data Conformance'
+    - text: '  Unmapped Concepts'
+      href: https://ssdqa.github.io/unmappedconcepts
   - text: 'Other Tools'
     menu:
     - text: 'Support Functions (squba.gen)'

@@ -34,7 +34,8 @@ squba_update <- function(){
                 "cohortattrition",
                 "squba.gen",
                 "quantvariabledistribution",
-                "categoricalvariabledistribution")
+                "categoricalvariabledistribution",
+                "unmappedconcepts")
 
   uptodate_list <- list()
   install_list <- list()
