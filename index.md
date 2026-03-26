@@ -68,6 +68,10 @@ appropriate repository for installation instructions.
     Specialties](https://ssdqa.github.io/clinicalevents.specialties):
     Assesses the concordance between a clinical event and the associated
     specialtist providers or care sites
+- Data Conformance
+  - [Unmapped Concepts](https://ssdqa.github.io/unmappedconcepts):
+    Evaluates both the proportion of unmapped values in a dataset and
+    the distribution of unmapped values amongst cohort members
 - Cohort Identification
   - [Cohort Attrition](https://ssdqa.github.io/cohortattrition): Examine
     each step of a study’s attrition criteria to identify potential
