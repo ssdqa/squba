@@ -35,7 +35,8 @@ squba_update <- function(){
                 "squba.gen",
                 "quantvariabledistribution",
                 "categoricalvariabledistribution",
-                "unmappedconcepts")
+                "unmappedconcepts",
+                "duplicaterecords")
 
   uptodate_list <- list()
   install_list <- list()

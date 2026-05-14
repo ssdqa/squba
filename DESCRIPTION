@@ -40,6 +40,7 @@ Imports:
     quantvariabledistribution (>= 0.0.0.9000),
     categoricalvariabledistribution (>= 0.0.0.9000),
     unmappedconcepts (>= 0.0.0.9000),
+    duplicaterecords (>= 0.0.0.9000),
     utils
 Remotes: 
     ssdqa/patientfacts,
@@ -54,6 +55,7 @@ Remotes:
     ssdqa/quantvariabledistribution,
     ssdqa/categoricalvariabledistribution,
     ssdqa/unmappedconcepts,
+    ssdqa/duplicaterecords,
     ssdqa/squba.gen
 Suggests: 
     knitr,

@@ -31,7 +31,7 @@ navbar:
       href: https://github.com/ssdqa/categoricalvariabledistribution
     - text: 'Concept Set Testing'
     - text: '  Concept Set Distribution'
-      href: https://ssdqa.github.io/conceptsetdistribution/
+      href: https://ssdqa.github.io/conceptsetdistribution
     - text: '  Source & Concept Vocabularies'
       href: https://ssdqa.github.io/sourceconceptvocabularies
     - text: 'Dataset Fitness'
@@ -40,6 +40,8 @@ navbar:
     - text: 'Data Conformance'
     - text: '  Unmapped Concepts'
       href: https://ssdqa.github.io/unmappedconcepts
+    - text: '  Duplicate Records'
+      href: https://ssdqa.github.io/duplicaterecords
   - text: 'Other Tools'
     menu:
     - text: 'Support Functions (squba.gen)'

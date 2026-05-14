@@ -4,7 +4,7 @@ pkgs <- c("patientfacts", "patientrecordconsistency", "patienteventsequencing",
           "sourceconceptvocabularies", "clinicalevents.specialties",
           "sensitivityselectioncriteria", "cohortattrition",
           "quantvariabledistribution", "categoricalvariabledistribution",
-          "unmappedconcepts",
+          "unmappedconcepts", "duplicaterecords",
           "squba.gen")
 
 squba_attach <- function() {
