@@ -25,6 +25,7 @@ A standard set up of `initialize_dq_session` may look something like
 this:
 
 ``` r
+
 library(conceptsetdistribution)
 
 initialize_dq_session(session_name = 'vignette_demo',
@@ -113,6 +114,7 @@ This function has some additional parameters that can optionally be
 specified should you so choose.
 
 ``` r
+
 initialize_dq_session(session_name = 'vignette_demo',
                       db_conn = dbi_connection / 'path/to/json/config', #choose one
                       is_json = FALSE / TRUE, #choose one

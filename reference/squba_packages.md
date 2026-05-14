@@ -21,5 +21,6 @@ squba_packages()
 #> [13] "rstudioapi"                      "sensitivityselectioncriteria"   
 #> [15] "sourceconceptvocabularies"       "squba.gen"                      
 #> [17] "quantvariabledistribution"       "categoricalvariabledistribution"
-#> [19] "unmappedconcepts"                "utils"                          
+#> [19] "unmappedconcepts"                "duplicaterecords"               
+#> [21] "utils"                          
 ```

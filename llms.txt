@@ -21,6 +21,7 @@ repository.
 Install the development version of the package:
 
 ``` r
+
 devtools::install_github('ssdqa/squba')
 ```
 
@@ -72,6 +73,9 @@ appropriate repository for installation instructions.
   - [Unmapped Concepts](https://ssdqa.github.io/unmappedconcepts):
     Evaluates both the proportion of unmapped values in a dataset and
     the distribution of unmapped values amongst cohort members
+  - [Duplicate Records](https://ssdqa.github.io/duplicaterecords):
+    Define and evaluate levels of duplication in a dataset and the
+    distribution of duplicate rows amongst cohort members
 - Cohort Identification
   - [Cohort Attrition](https://ssdqa.github.io/cohortattrition): Examine
     each step of a study’s attrition criteria to identify potential
